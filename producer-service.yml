@@ -18,7 +18,7 @@ eureka:
       
     instance:
         # this is to generate instance id as a unique value
-        instance-id: ${spring.application.name}:${random.value}
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     
 management:
     security:
