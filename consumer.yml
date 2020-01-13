@@ -1,18 +1,18 @@
 server:
-  port: 7030
+  port: 7003
     
 spring:
   profiles: dev
   
   application:
-    name: product
+    name: consumer-service
         
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:7010/eureka
+      defaultZone: http://localhost:7001/eureka
       
   instance:
     # this is to generate instance id as a unique value
